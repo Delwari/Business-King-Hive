@@ -11,16 +11,19 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 15%;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+nav h1 {
+    width: 35%;
+    margin: 0 auto;
 }
 
 .BKH__logo {
-    height: 20rem;
+    width: 100%;
 }
 
 .BKH__wzp {
@@ -34,6 +37,10 @@ nav {
     border-radius: 10px;
     padding: 9px 15px 7px 20px;
     transition: 200ms;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    z-index: 50;
 }
 
 .BKH__wzp:hover {
@@ -43,7 +50,7 @@ nav {
 .tittle {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 40px;
-    margin: 7% 0 5%;
+    margin: 3.5% 0 5%;
     text-align: center;
 
 }
@@ -64,13 +71,24 @@ nav {
 }
 
 .carbon__specs {
-    white-space: nowrap;
     display: inline-block;
     vertical-align: top;
     width: 35%;
     margin-top: 1%;
     margin-left: 5%;
+    list-style: disc;
+    font-family: 'Roboto', sans-serif;
+    
+}
 
+.carbon__specs li {
+    list-style: disc;
+    margin-left: 7%;
+    margin-bottom: 3%;
+}
+
+.carbon__specs li::after {
+    content: ";";
 }
 
 .carbon__specs__loc {
@@ -112,7 +130,15 @@ footer {
     padding-bottom: 1%;
 }
 
+strong {
+    font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
+    nav h1 {
+        width: 60%;
+    }
+
     .carbon__slides {
         display: flex;
         flex-direction: column;
@@ -122,16 +148,34 @@ footer {
         padding: 0;
     }
 
+    .tittle {
+        margin-top: 15%;
+    }
+
+    .subtittle {
+        text-align: center;
+    }
+
     .carbon__specs {
-        white-space: nowrap;
+        width: 70%;
         display: inline-block;
         vertical-align: top;
-        margin: 0;
+        margin: 0 auto;
+    }
+    
+
+    .carbon__specs li {
+        text-align: center;
+        list-style: none;
+        margin-left: 0;
     }
 
     .carbon__specs__loc {
         text-align: center;
+        margin: 0 auto;
     }
+
+    
 
     .carbon__ed {
         display: block;
@@ -143,3 +187,4 @@ footer {
         border-radius: 0;
     }
 }
+
