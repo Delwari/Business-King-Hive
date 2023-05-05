@@ -4,255 +4,118 @@
     overflow: hidden;
 }
 
-body {
+main {
     display: flex;
-
 }
 
-header {
-    width: 100%;
+.container {
+    display: flex;
+    width: 70vw;
     height: 100vh;
-    background-image: url(assents/WhatsApp\ Image\ 2023-05-03\ at\ 1.53.08\ PM.jpeg);
+    background-image: url(assents/Predio-Sol.jpeg);
     background-repeat: no-repeat;
+    background-size: 70vw 100vh;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 h1 {
-    margin: 7%;
     text-align: center;
-}
-
-/* h1 {
-    text-align: center;
-    font-family: 'Bebas Neue', cursive;
     color: #FFF;
     text-shadow: #000 2px 3px 2px;
-    margin-top: 4%;
     font-size: 50px;
-} */
+    
+}
 
-main {
+img {
+    width: 100%;
+    filter: drop-shadow(0 0 0.4em rgb(255, 255, 255));
+}
+
+aside {
+    background-color: #dfe9c9;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    gap: 15%;
     align-items: center;
-    gap: 30%;
-    background-color: #FFF;
-    box-shadow: 0px 0px 50px 0px #000;
+    flex-direction: column;
+    width: 30vw;
+    box-shadow: -3px 0px 20px 0px #000;
 }
 
 h2 {
-    
-    font-family: 'Bebas Neue', cursive;
     text-align: center;
-    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin: 0 5%;
 }
 
 .btn {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 24px;
-    border: 0;
-    color: #000;
-    
-    text-decoration: none; 
-    padding: 2.5% 5%;
-    border-radius: 50px;
+    font-size: 1.5rem;
     border: 5px solid #000;
-    transition: 200ms;
-    letter-spacing: 5px;
-}
-
-.btn:hover {
-    background-color: #000;
-    color: #FFF;
-}
-
- /*
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    width: 100%;
-    height: 100vh;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-
-nav h1 {
-    width: 35%;
-    margin: 0 auto;
-}
-
-.BKH__logo {
-    width: 100%;
-}
-
-.BKH__wzp {
+    border-radius: 10px;
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.3rem;
-    background-color: #FFD600;
     color: black;
-    letter-spacing: 5px;
     text-decoration: none;
-    border: 2.5px solid black;
-    border-radius: 10px;
-    padding: 9px 15px 7px 20px;
-    transition: 200ms;
-    position: fixed;
-    right: 5%;
-    bottom: 5%;
-    z-index: 50;
+    padding: 1rem 2rem;
 }
 
-.BKH__wzp:hover {
-    background-color: #ff9100;
+
+
+.btn:hover, .btn:focus {
+    background-color: black;
+    color: #FFF;
+    outline: none;
 }
 
-.tittle {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 40px;
-    margin: 3.5% 0 5%;
-    text-align: center;
 
+
+.BKH-link::selection, .BKH-link:focus {
+    border: none;
+    outline: none;
 }
 
-.subtittle {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 35px;
-    margin: 5% 0;
-    white-space: initial;
-}
 
-.carbon__slides {
-    background-color: #FFD600;
-    width: 65%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.carbon__specs {
-    display: inline-block;
-    vertical-align: top;
-    width: 35%;
-    margin-top: 1%;
-    margin-left: 5%;
-    list-style: disc;
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-.carbon__specs li {
-    list-style: disc;
-    margin-left: 7%;
-    margin-bottom: 3%;
-}
-
-.carbon__specs li::after {
-    content: ";";
-}
-
-.carbon__specs__loc {
-    text-align: left;
-}
-
-.carbon__ed {
-    display: inline-block;
-    width: 50%;
-}
-
-.carbon__ed__img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: #FFD600;
-}
-
-.subtittle_about {
-    padding-top: 2%;
-    margin-top: 9%;
-    text-align: center;
-    margin-bottom: 1%;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 35px;
-}
-
-.about__text {
-    font-family: 'Roboto', sans-serif;
-    margin: 0 25%;
-    text-align: center;
-}
-
-.copyright {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding-bottom: 1%;
-}
-
-strong {
-    font-weight: bold;
-}
-
-@media screen and (max-width: 600px) {
-    nav h1 {
-        width: 60%;
+@media screen and (max-width: 700px) {
+    html {
+        overflow: auto;
+        
     }
 
-    .carbon__slides {
-        display: flex;
+    main {
         flex-direction: column;
-        background-color: #FFF;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        height: 100vh;
     }
 
-    .tittle {
-        margin-top: 15%;
+    .container {
+        
+        width: 100vw;
+        height: 50%;
+        background-size: 100vw 70vh;
     }
 
-    .subtittle {
-        text-align: center;
-    }
-
-    .carbon__specs {
+    h1 {
         width: 70%;
+    }
+
+    aside {
+        width: 100%;
+        height: 50%;
+        
+    }
+
+    h2 {
+        
+        font-size: 2.7em;
+        margin-top: 5%;
+    }
+
+    .ul {
         display: inline-block;
-        vertical-align: top;
-        margin: 0 auto;
-    }
-    
-
-    .carbon__specs li {
-        text-align: center;
-        list-style: none;
-        margin-left: 0;
     }
 
-    .carbon__specs__loc {
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    
-
-    .carbon__ed {
-        display: block;
-        width: 100%;
-    }
-
-    .carbon__ed__img {
-        width: 100%;
-        border-radius: 0;
-    }
 }
- */
