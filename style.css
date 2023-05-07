@@ -6,6 +6,7 @@ html {
 
 main {
     display: flex;
+    height: 100%;
 }
 
 .container {
@@ -34,7 +35,7 @@ img {
 }
 
 aside {
-    background-color: #dfe9c9;
+    background-color: #eeeeee;
     display: flex;
     justify-content: center;
     gap: 15%;
@@ -96,7 +97,7 @@ h2 {
         background-size: 100vw 70vh;
     }
 
-    
+
     h1 {
         width: 70%;
     }
